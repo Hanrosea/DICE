@@ -1,0 +1,68 @@
+.box-left { /*화면분할-좌측*/
+    width: 30%;
+    float: left;
+    box-sizing: border-box;
+    height: 950px;
+}
+.box-center { /*화면분할-중앙*/
+    width: 40%;
+    float: right;
+    box-sizing: border-box;
+    text-align: center;
+    height: auto;
+}
+.box-right { /*화면분할-우측*/
+    width: 30%;
+    float: right;
+    box-sizing: border-box;
+    height: 950px;
+}
+table{ /*점수판 크기*/
+    width: 300px;
+    height: 200px;
+    max-width: 100%;
+    margin-top: 100px;
+}
+th{ /*점수판 상단*/
+    text-align: center;
+    font-size: 25px;
+    font-weight: 1000;
+    background-color: gainsboro;
+    font-family: 'PyeongChangPeace-Light';
+}
+tr,td{ /*점수판 내부*/
+    text-align: left;
+    font-size: 20px;
+    font-family: 'PyeongChangPeace-Light';
+}
+
+@font-face { /*평창평화제 폰트*/
+    font-family: 'PyeongChangPeace-Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+} 
+body{ /*배경화면 색*/
+    background-color:#f5f6f7;
+}
+
+.PB{ /*게임 보드*/
+    margin-top: 200px;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
+.P1{ /*P1 점수판*/
+    margin-left: auto;
+    margin-right: auto;
+}
+.P2{ /*P2 점수판*/
+    margin-left: auto;
+    margin-right: auto;
+}
+.score,.score2{
+    width:295px;
+    margin-left:135px;
+}

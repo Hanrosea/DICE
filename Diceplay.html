@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIES DICE</title>
+    <link rel ="stylesheet" href="Diceplay.css">
+</head>
+<body>
+    <div class='box-left'> <!--Player 1-->
+        <table class="P1" border="1">
+            <th>COMBO</th>
+            <th>SCORE</th>
+            <tr>
+                <td>Single</td>
+                <td><p id="1D" style="display:inline">0</p><button id = "1btn_1" type="button" onclick="DiceCalc_Single();Dice_Count()">+</button></td>
+            </tr>
+            <tr>
+                <td>double</td>
+                <td><p id="2D" style="display:inline">0</p><button id = "1btn_2" type="button" onclick="DiceCalc_Double();Dice_Count()">+</button></td>
+            </tr>
+            <tr>
+                <td>Triple</td>
+                <td><p id="3D" style="display:inline">0</p><button id = "1btn_3" type="button" onclick="DiceCalc_Triple();Dice_Count()">+</button></td>
+            </tr>
+            <tr>
+                <td>Quads</td>
+                <td><p id="4D" style="display:inline">0</p><button id = "1btn_4" type="button" onclick="DiceCalc_Quads();Dice_Count()">+</button></td>
+            </tr>
+            <tr>
+                <td>Full_H</td>
+                <td><p id="5D" style="display:inline">0</p><button id = "1btn_5" type="button" onclick="DiceCalc_Full_H();Dice_Count()">+</button></td>
+            </tr>
+            <tr>
+                <td>Sextu</td>
+                <td><p id="6D" style="display:inline">0</p><button id = "1btn_6" type="button" onclick="DiceCalc_Sextu();Dice_Count()">+</button></td>
+            </tr>
+            <tr>
+                <td>Skip</td>
+                <td><p id="7D" style="display:inline">0</p><button type="button" onclick="Dice_Skip();Dice_Count()">+</button></td>
+            </tr>
+            <tr>
+                <td colspan="2">SCORE<div id="score1" style="display:inline; float:right">0</div>
+            </tr>
+        </table>
+    </div>  
+    <div class='box-right'> <!--Player 2-->
+        <table class="P2" border="1">
+            <th>COMBO</th>
+            <th>SCORE</th>
+            <tr>
+                <td>Single</td>
+                <td><p id="1D2" style="display:inline">0</p><button id = "2btn_1" type="button" onclick="DiceCalc_Single2();Dice_Count2()">+</button></td>
+            </tr>
+            <tr>
+                <td>double</td>
+                <td><p id="2D2" style="display:inline">0</p><button id = "2btn_2" type="button" onclick="DiceCalc_Double2();Dice_Count2()">+</button></td>
+            </tr>
+            <tr>
+                <td>Triple</td>
+                <td><p id="3D2" style="display:inline">0</p><button id = "2btn_3" type="button" onclick="DiceCalc_Triple2();Dice_Count2()">+</button></td>
+            </tr>
+            <tr>
+                <td>Quads</td>
+                <td><p id="4D2" style="display:inline">0</p><button id = "2btn_4" type="button" onclick="DiceCalc_Quads2();Dice_Count2()">+</button></td>
+            </tr>
+            <tr>
+                <td>Full_H</td>
+                <td><p id="5D2" style="display:inline">0</p><button id = "2btn_5" type="button" onclick="DiceCalc_Full_H2();Dice_Count2()">+</button></td>
+            </tr>
+            <tr>
+                <td>Sextu</td>
+                <td><p id="6D2" style="display:inline">0</p><button id = "2btn_6" type="button" onclick="DiceCalc_Sextu2();Dice_Count2()">+</button></td>
+            </tr>
+            <tr>
+                <td>Skip</td>
+                <td><p id="7D2" style="display:inline">0</p><button type="button" onclick="Dice_Skip2();Dice_Count2()">+</button></td>
+            </tr>
+            <tr>
+                <td colspan="2">SCORE<div id="score2" style="display:inline; float:right">0</div>
+            </tr>
+        </table>
+    </div>
+    <div class='box-center'> <!--Play Board-->
+        <table class="PB" border="1">
+            <tr>
+                <td><image src="DiceImg/Basis.png" id="D1P"></image></td>
+                <td><image src="DiceImg/Basis.png" id="D2P"></image></td>
+                <td><image src="DiceImg/Basis.png" id="D3P"></image></td>
+            </tr>
+            <tr>
+                <td><image src="DiceImg/Basis.png" id="D4P"></image></td>
+                <td><image src="DiceImg/Basis.png" id="D5P"></image></td>
+                <td><image src="DiceImg/Basis.png" id="D6P"></image></td>
+            </tr>
+        </table>
+        <br>
+            <div>
+                <button type="button" onclick="SwapDice()" style="width:100px; height:50px; font-size: 20px;">Rolling</button>
+                <button type="button" onclick="ResetDice()" style="width:100px; height:50px; font-size: 20px;">Reset</button>
+            </div>
+        </div>
+    <script src="Diceplay.js"></script>
+</body>
+</html>
